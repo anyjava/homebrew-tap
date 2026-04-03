@@ -5,21 +5,21 @@
 class KbnCli < Formula
   desc "Obsidian vault kanban board TUI viewer"
   homepage "https://github.com/anyjava/kbn-cli"
-  version "0.1.4"
+  version "0.1.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/anyjava/kbn-cli/releases/download/v0.1.4/kbn_0.1.4_darwin_amd64.tar.gz"
-      sha256 "c314e18cad2b5c843c2d615c5f1fb35b758172e3f31b9a46ac3192cf921f0b40"
+      url "https://github.com/anyjava/kbn-cli/releases/download/v0.1.5/kbn_0.1.5_darwin_amd64.tar.gz"
+      sha256 "19f30b3cd713c6787150abd190bdbaa5b3347a34efc4d8ada982eefa4041b55e"
 
       define_method(:install) do
         bin.install "kbn"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/anyjava/kbn-cli/releases/download/v0.1.4/kbn_0.1.4_darwin_arm64.tar.gz"
-      sha256 "f654e94e5aacb39ea06ea45fa1d7f5242cf75d75f146c67a2814ff9b6090e95a"
+      url "https://github.com/anyjava/kbn-cli/releases/download/v0.1.5/kbn_0.1.5_darwin_arm64.tar.gz"
+      sha256 "9606f5818ef0c64c7b1f7c5d25d772667620f3111625cb4047dcd742b4e31320"
 
       define_method(:install) do
         bin.install "kbn"
@@ -29,15 +29,15 @@ class KbnCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/anyjava/kbn-cli/releases/download/v0.1.4/kbn_0.1.4_linux_amd64.tar.gz"
-      sha256 "4002604a33bb3cf667e5a66211ab2eb959a679780deebe7b3909815ee3056cca"
+      url "https://github.com/anyjava/kbn-cli/releases/download/v0.1.5/kbn_0.1.5_linux_amd64.tar.gz"
+      sha256 "f2f28a7ed8548703eadd1e0f80fd8f46ed91e67f93e20478fc35f988f5059b13"
       define_method(:install) do
         bin.install "kbn"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/anyjava/kbn-cli/releases/download/v0.1.4/kbn_0.1.4_linux_arm64.tar.gz"
-      sha256 "5c7a0f6d7540b627a4350bbe370248dceb5eaea40664ca62cf6d2714a37aeb65"
+      url "https://github.com/anyjava/kbn-cli/releases/download/v0.1.5/kbn_0.1.5_linux_arm64.tar.gz"
+      sha256 "ce38b92dfc7ae4680c02494baaeb57f356730b34794e091122fac8a8e8106f95"
       define_method(:install) do
         bin.install "kbn"
       end
